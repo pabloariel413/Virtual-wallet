@@ -3,10 +3,46 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LoginComponent } from './auth/login/login.component';
+import { LogoutComponent } from './auth/logout/logout.component';
+import { RegisterComponent } from './auth/register/register.component';
+import { GuardsComponent } from './auth/guards/guards.component';
+import { DashboardComponent } from './auth/dashboard/dashboard.component';
+import { CardInfoComponent } from './components/card-info/card-info.component';
+import { CardComponent } from './components/card/card.component';
+import { ChartBalanceComponent } from './components/chart-balance/chart-balance.component';
+import { ChartEarningsComponent } from './components/chart-earnings/chart-earnings.component';
+import { ChartExpensesComponent } from './components/chart-expenses/chart-expenses.component';
+import { CreditItemComponent } from './components/credit-item/credit-item.component';
+import { CreditsComponent } from './components/credits/credits.component';
+import { NavbarItemComponent } from './components/navbar-item/navbar-item.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { NavleftItemComponent } from './components/navleft-item/navleft-item.component';
+import { NavleftListComponent } from './components/navleft-list/navleft-list.component';
+import { TransactionItemComponent } from './components/transaction-item/transaction-item.component';
+import { TransactionsComponent } from './components/transactions/transactions.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    LogoutComponent,
+    RegisterComponent,
+    GuardsComponent,
+    DashboardComponent,
+    CardInfoComponent,
+    CardComponent,
+    ChartBalanceComponent,
+    ChartEarningsComponent,
+    ChartExpensesComponent,
+    CreditItemComponent,
+    CreditsComponent,
+    NavbarItemComponent,
+    NavbarComponent,
+    NavleftItemComponent,
+    NavleftListComponent,
+    TransactionItemComponent,
+    TransactionsComponent
   ],
   imports: [
     BrowserModule,

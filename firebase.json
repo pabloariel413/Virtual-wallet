@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/virtual-wallet",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
