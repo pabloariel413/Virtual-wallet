@@ -1,0 +1,15 @@
+.list-item {
+    font-size: large;
+    list-style: none;
+    padding-left: 20px;
+    margin-top: 20px;
+    cursor: pointer
+}
+
+.list-item img {
+    width: 50px;
+}
+
+.list-item:hover {
+    transform: scale(1.1);
+}

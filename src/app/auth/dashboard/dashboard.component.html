@@ -1,1 +1,60 @@
-<p>dashboard works!</p>
+<app-navbar></app-navbar>
+
+<section class="home-container">
+    <figure class="divisor">
+    </figure>
+
+    <div class="divider">
+        <nav class="navbar-left">
+ <app-navleft-list></app-navleft-list>
+            <figure class="divisor-nav">
+            </figure>
+        </nav>
+
+        <div class="moves-data">
+        <div class="tarjetas">
+            <div class="graphics">
+                <div class="card c1" style="background-image: url(https://previews.dropbox.com/p/thumb/ACG81TSfyO8C6X3DJP_B8vp91522UK37XTT3umN2lUNN12b4lhE41bLu_S8ssfmaCT94WsWrzEc37H9r78O9W9Yoy6inR1cUzZrKQyA9WvIea6c0rsx_ujFKkcLqiSkU4t_0Ro1Db9URWp_zNtnFMN_knXsR0LmhHcV8q0zco2DafMwFojmHqqnxofNkXSWQbi5mnhgGvvTNfjUQwNCs2H4ta91u9Crj1XLyHuii-EyT0pSgKQzwZFoXwYxxNnm2VQ0UN2G051n4CPh0HAFPDDzlqJxmEyBZZBCTJGEaOVa2Ny5TfCifZyxYrcqnX7w2V86DJKmglIkAk06lXyv1LeeK/p.png);">
+ <app-card-info></app-card-info>
+                </div>
+                <div class="card c2">
+                    <app-chart-earnings></app-chart-earnings>
+                </div>
+                <div class="card c2">
+                    <app-chart-expenses></app-chart-expenses>
+                </div>
+            </div>
+            <div class="moves">
+                <div class="supercard">
+                   <app-chart-balance></app-chart-balance>
+                </div>
+                <div class="supercard">
+                    <section class="transaction-container">
+                        <div class="title-container">
+                        <h4>Últimas Transacciones</h4>
+                        <a href="/home"><button>Ver todo</button></a>
+                    </div>
+                    <app-transactions></app-transactions>
+                    </section>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="credits">
+            <ul class="credit-titles">
+                <li class="monto"><b>Monto total</b></li>
+                <li class="cuotes"><b>Cuotas</b></li>
+                <li class="emision"><b>Fecha de Emisión</b></li>
+                <li class="montocuotas"><b>Mensual</b></li>
+                <li class="interes"><b>Tasa de interés</b></li>
+                <li><button>Ver todo</button></li>
+            </ul>
+       <app-credits></app-credits>
+        </div>
+
+    </div>
+    
+    </div>
+
+</section>

@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "amount": "800.000",
+        "dues": "10 meses",
+        "date": "Abril 20, 2023",
+        "monthly": "80.000",
+        "options": "Pagar",
+        "interest": "50%"
+    },
+    {
+        "id": "2",
+        "amount": "200.000",
+        "dues": "5 meses",
+        "date": "Febrero 20, 2023",
+        "monthly": "80.000",
+        "options": "Pagar",
+        "interest": "50%"
+    }
+]

@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CardData } from 'src/app/services/card/cardmodel';
+
 
 @Component({
   selector: 'app-card-info',
@@ -7,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class CardInfoComponent {
 
+  @Input() cardData: CardData | undefined;
 }

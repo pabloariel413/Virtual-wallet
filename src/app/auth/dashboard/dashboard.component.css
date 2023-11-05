@@ -1,0 +1,179 @@
+.home-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #FAFAFB;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.divisor {
+    height: 3px;
+    width: 60%;
+    background-color: #FCC03E;
+    margin-left: 27%;
+    margin-right: 5%;
+}
+
+.divider {
+    display: flex;
+}
+
+.navbar-left {
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjetas {
+    display: flex;
+    flex-direction: row;
+}
+
+.graphics {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    border: none;
+    border-radius: 20px;
+    height: 165px;
+    font-weight: bold;
+    padding: 11px 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-color: #DEE1E6;
+    width: 320px;
+    color: #FAFAFB;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.moves {
+    display: flex;
+    flex-direction: column;
+}
+
+.supercard {
+    height: 250px;
+    width: 600px;
+    overflow: hidden;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #DEE1E6;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-container button {
+    background-color: #FCC03E;
+    border: none;
+    border-radius: 20px;
+    padding: 2px 10px 2px;
+}
+
+.transaction-container {
+    padding: 10px;
+}
+
+.divisor-nav {
+    height: 3px;
+    width: 50%;
+    background-color: #FCC03E;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.moves-data {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
+.credits {
+    width: 100%;
+    height: 50px;
+    gap: 10px;
+    background-color: #DEE1E6;
+}
+
+.credit-titles {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.credit-titles button {
+    background-color: #FCC03E;
+    border: none;
+    border-radius: 20px;
+    padding: 2px 10px 2px;
+}
+
+@media screen and (max-width: 600px) {
+    .divisor{
+        margin: 0 auto;
+        max-width: 300px;
+    }
+    .navbar-left {
+        display: none;
+    }
+
+    .moves-data {
+        margin: 0px;
+    }
+
+    .tarjetas {
+        display: list-item;
+        width: 100%;
+    }
+
+    .card {
+       margin: 45px;
+    }
+
+    .supercard {
+        width: 100%;
+        height: max-content;
+        margin: 20px 0px 20px;
+        border-radius: 0%;
+    }
+
+    .c2 {
+        display: none;
+    }
+
+    .transaction-container {
+        max-width: 400px;
+    }
+    .monto{
+        display: none;
+    }
+    .emision {
+        display: none;
+    }
+
+    .interes {
+        display: none;
+    }
+    .credit-titles{
+        justify-content: center;
+        gap: 20px;
+    }
+    .credits{
+        margin: 0 auto;
+        max-width: 400px;
+       }
+}

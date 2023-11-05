@@ -1,0 +1,39 @@
+
+.cmoves{
+    background-color: #FAFAFB;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 15px 15px 0px;
+    align-items: center;
+}
+
+button{
+    background-color: #223452;
+    border: none;
+    padding: 10px 20px 10px;
+    border-radius: 20px;
+    color: aliceblue;
+}
+
+.divisor {
+    height: 3px;
+    width: 100%;
+    background-color: #FCC03E;
+}
+
+@media screen and (max-width: 600px){
+    .monto{
+        display: none;
+    }
+    .emision{
+        display: none;
+    }
+    .interes{
+        display: none;
+    }
+    .cmoves{
+        justify-content: center;
+        gap: 20px;
+    }
+}

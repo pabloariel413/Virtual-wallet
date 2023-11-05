@@ -1,0 +1,12 @@
+[
+    {
+        "id": "1",
+        "titles": "Saldo disponible",
+        "titlename": "Nombre del titular",
+        "titledate": "Vencimiento",
+        "saldo": "$12,345,789",
+        "cardnum": "**** **** **** 1234",
+        "name": "Luz Deny",
+        "date": "03/21"
+    }
+]

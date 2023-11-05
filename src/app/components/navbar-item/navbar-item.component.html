@@ -1,1 +1,60 @@
-<p>navbar-item works!</p>
+<div class="navbar-container">
+    <div class="logo">
+    <a class="navbar-brand" href="/home">
+        <img [src]="navbarData.logo" width="100px" alt="logounicomer" style="padding-top: 10px;">
+    </a>
+</div>
+
+    <form class="buscador d-flex" role="search">
+        <button class="btn" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg></button>
+        <input class="form-control me-2 focus-ring" type="search" [placeholder]="navbarData.searcher"
+            aria-label="Search">
+    </form>
+
+    <nav class="sections">
+        <a routerLink="/home"><img [src]="navbarData.settings" alt="settings" width="50px"></a>
+        <a href="/home"><img [src]="navbarData.reminders" alt="notifications" width="50px"></a>
+        <a routerLink="/login"><img [src]="navbarData.userprofile" alt="userprofile" width="80px"></a>
+    </nav>
+</div>
+
+
+
+
+<!--Menú para celulares-->
+<section class="navbarcel">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/home">
+                <img [src]="navbarData.logo" width="50px" alt="logounicomer" style="padding-top: 10px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbar-collapse" class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <form class="buscadorcel d-flex" role="search">
+                        <button class="btn" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg></button>
+                        <input class="form-control me-2 focus-ring" type="search" [placeholder]="navbarData.searcher"
+                            aria-label="Search">
+                    </form>
+                    <app-navleft-list></app-navleft-list>
+                    <nav class="sectionscel">
+                        <a href="/home"><img [src]="navbarData.settings" alt="settings" width="50px"></a>
+                        <a href="/home"><img [src]="navbarData.reminders" alt="notifications" width="50px"></a>
+                        <a href="/home"><img [src]="navbarData.userprofile" alt="userprofile" width="50px"></a>
+                    </nav>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>

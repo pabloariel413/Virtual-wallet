@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "title": "Transacciones",
+        "receiver": "Morena Ávalos",
+        "op": "Transferencia",
+        "amount": "25.000",
+        "date": "Octubre 25, 2023",
+        "hour": "17:32",
+        "state": true
+    },
+    {
+        "id": "2",
+        "title": "Transacciones",
+        "receiver": "Morena Ávalos",
+        "op": "Transferencia",
+        "amount": "25.000",
+        "date": "Octubre 25, 2023",
+        "hour": "17:30",
+        "state": false
+    },
+    {
+        "id": "3",
+        "title": "Transacciones",
+        "receiver": "Morena Ávalos",
+        "op": "Transferencia",
+        "amount": "25.000",
+        "date": "Octubre 25, 2023",
+        "hour": "17:30",
+        "state": true
+    }
+]

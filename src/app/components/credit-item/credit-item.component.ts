@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CreditData } from 'src/app/services/moves/creditmodel';
 
 @Component({
   selector: 'app-credit-item',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class CreditItemComponent {
 
+  @Input() creditData: CreditData | undefined;
 }
