@@ -1,1 +1,38 @@
-<p>login works!</p>
+<section id="login-container">
+
+    <div class="img-login">
+        <img src="https://previews.dropbox.com/p/thumb/ACFf5YAvZDEuDEiyOpsPO8ej2OOSQs9vaqwy-LGCL5zxoKmep9VjQ1E6p9IvVcAC6HyEfWBQPg0X5xWvYvnH1mY5fiKzIfeCV2zGBDN1Y2LsMWHepdpzQArjZmY0L_UA759LwDFZY4wsyc7O8xp3bUuBwkfTRlXwMbHbavennW3oRRGztF1Lic0jjcjsHHYrIAyesfUM8ZIfN_lsQsGRuEOoasICG_GaEN3v1HQaFNR-eZ-vv8relQNOgVjoQfyH7b2LlkmGnu_-7l8MA3HTdpofuDcEESKnPh7r_nWzQ1b8lGRmyVvj-MoA8qnicqAaa9-Cp-Xexk6QV9-VMkEjBzIg/p.jpeg" alt="Login image" class="bankunicomer">
+    </div>
+
+
+    <div class="login">
+
+        <div class="logo">
+            <img class="img-fluid" src="https://previews.dropbox.com/p/thumb/ACEaXE_oRDMwozKbqyiNwfIDm9zEILqpUfFPeec0afLR-QmfSgz3lzf6vr3FDDtSAWb8WWtG6FemUC-4dKk5jk1ysevPa0sW72jCVY1t8vCk4gVdsREZm9OP4yLYaFIaROakPOGGq9jfSyIVQaloZMBfEGiFyW3XYCrREq77ssz38P4-AsCEazTgITzRJ3CHUcVQmfLsuNhlkB-5aLHqWxD9Vp2NmR_nDfpLafAeo4kyWqeAzjHqLyyhaWSIw_4FKU4tc3Gq7tk6uVMjcrI5RBM6Ab5gFhYa9-3k9IOOFOjwYhgPRgH4F5KF8T_3aXpv3YwWAvpxU9kmDjMr_bhJKaO3/p.png">
+        </div>
+        <div class="bienvenida">
+            <img class="img-fluid" src="https://previews.dropbox.com/p/thumb/ACGBz3X-lltQfMPYnmlKnMl5uXfIuL0fB1URIrtpSMdz6e9N280UHIE-aA3iDxy5LbQ7mzoOW980kgDopQurXSO51bfGLaqQdHkhivUv4MEfy655PHht5xex40Y3mVs3pYZaT0ovpUxpnIFRIBny7tcnf_P80MMnnUvvC-xcU2mcFIta6YFDK6OHIUOnvG99Z9un6REhwusDbcK9OBOQxBcFOmeHdt1EqkP4pOEwObJJxzQB20Frk6XehzW64hop62Kvzrr7ZG8p84RMhxOBCBs3djSa4mTsgUH1Y6179WqaEyTkYuvVfegoISIkk6POfMR3yhGMU_cW5IUHSLYHuBjz/p.png" alt="unicomer">
+        </div>
+
+        <form class="loginForm" [formGroup]="myGroup">
+
+            <div class="form-fill mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="text" class="form-control" formControlName="email" #email required>
+              </div>
+
+            <div class="form-fill mb-3">
+                <label for="exampleInputPassword1" class="form-label">Clave</label>
+                <input type="text" class="form-control" id="exampleInputPassword1" formControlName="clave" #password required>
+                <div id="passwordHelp" class="form-text">Nunca compartas tu clave con nadie.</div>
+              </div>
+
+            <button type="click" (click)="logIn(email.value, password.value)" class="btn" id="login">Ingresar</button>
+
+        </form>
+
+        <p>¿No tienes cuenta? <a routerLink="/register" class="link-register">Registrate aquí.</a></p>
+
+    </div>
+
+</section>

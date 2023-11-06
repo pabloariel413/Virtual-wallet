@@ -9,7 +9,6 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './auth/login/login.component';
 import { LogoutComponent } from './auth/logout/logout.component';
 import { RegisterComponent } from './auth/register/register.component';
-import { GuardsComponent } from './auth/guards/guards.component';
 import { DashboardComponent } from './auth/dashboard/dashboard.component';
 import { CardInfoComponent } from './components/card-info/card-info.component';
 import { CardComponent } from './components/card/card.component';
@@ -24,6 +23,10 @@ import { NavleftItemComponent } from './components/navleft-item/navleft-item.com
 import { NavleftListComponent } from './components/navleft-list/navleft-list.component';
 import { TransactionItemComponent } from './components/transaction-item/transaction-item.component';
 import { TransactionsComponent } from './components/transactions/transactions.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { AngularFireModule } from '@angular/fire/compat';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,6 @@ import { TransactionsComponent } from './components/transactions/transactions.co
     LoginComponent,
     LogoutComponent,
     RegisterComponent,
-    GuardsComponent,
     DashboardComponent,
     CardInfoComponent,
     CardComponent,
@@ -52,7 +54,11 @@ import { TransactionsComponent } from './components/transactions/transactions.co
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
+
+    AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,25 @@
-<p>register works!</p>
+<section class="register-container">
+    <div class="unicomerimg">
+      <div class="logo">
+        <img class="img-fluid" src="https://previews.dropbox.com/p/thumb/ACEaXE_oRDMwozKbqyiNwfIDm9zEILqpUfFPeec0afLR-QmfSgz3lzf6vr3FDDtSAWb8WWtG6FemUC-4dKk5jk1ysevPa0sW72jCVY1t8vCk4gVdsREZm9OP4yLYaFIaROakPOGGq9jfSyIVQaloZMBfEGiFyW3XYCrREq77ssz38P4-AsCEazTgITzRJ3CHUcVQmfLsuNhlkB-5aLHqWxD9Vp2NmR_nDfpLafAeo4kyWqeAzjHqLyyhaWSIw_4FKU4tc3Gq7tk6uVMjcrI5RBM6Ab5gFhYa9-3k9IOOFOjwYhgPRgH4F5KF8T_3aXpv3YwWAvpxU9kmDjMr_bhJKaO3/p.png">
+    </div>
+    <div class="bienvenida">
+        <img class="img-fluid" src="https://previews.dropbox.com/p/thumb/ACH2BFn7SYbXoD2HBg-1E8ArNfqyOoTHpp7gghHQ4S97o4X73LoEC00BkqCUqMnFz6wIk_kUmnmgDRn_aFCiVG2VHY4_Z-pG6PrNpHDc71vRcgKEqm2XRBPWkhZoDrawyr4XFsZ0uinkaq8o3ch0BgJVuAGSxNpGuXC03aaDpBN7gsMjo_7pJFcc1FnBsihF4M9v9nxcK0Wq9CvJs91MMQYkB1bE65puL6w47BsDi3vvG-ng8hbxJRhf8GqqyjTVJDDWX_uActL3XZgB_-j5auXQMT-NICb5nw43KGF9V9vT2URlQ06HtwpdtNvvf4Dn1qwBY8aG3MwSi0jXNgaCVew_/p.png" alt="unicomer">
+    </div>
+    </div>
+    
+    <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" name="email" class="form-control" id="inputEmail4" #email required>
+        </div> 
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Contraseña</label>
+          <input type="password" name="password" class="form-control" id="inputPassword4" #password required>
+        </div>
+    
+          <button  type="click" (click)="signUp(email.value, password.value)" routerLink="/login" class="btn">Registrarse</button>
+      </form>
+
+      <p>¿Ya tienes una cuenta? <a routerLink="/login" class="link-login">Ingresa aquí.</a></p>
+    </section>

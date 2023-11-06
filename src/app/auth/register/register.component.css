@@ -1,0 +1,58 @@
+.register-container{
+    background-color: #223452;
+    height: 100vh;
+    color:aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    width: 50%;
+}
+
+.logo img{
+    width: 100px;
+}
+
+.bienvenida img{
+    width: 300px;
+}
+
+.unicomerimg{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    height: 150px;
+}
+
+.btn{
+    background-color: #FCC03E;
+    color: #FAFAFB;
+    font-size:x-large;
+   padding: 10px 43.2% 10px;
+   border-radius: 50px;
+   }
+   
+   .btn:hover{
+       background-color: #ffffff;
+       color: #FCC03E;
+   }
+
+   p{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+a{
+   color: #FCC03E;
+}
+
+
+@media screen and (max-width: 600px){
+   form{
+    width: 80%;
+   }
+}

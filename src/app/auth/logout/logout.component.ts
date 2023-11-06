@@ -13,4 +13,7 @@ export class LogoutComponent {
   }
 
 
+  logOut() {
+    this.authService.logOut();
+  }
 }
